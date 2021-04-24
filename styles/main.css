@@ -1,3 +1,19 @@
 @tailwind base;
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  background: url(/images/pattern-hills.svg), url(/images/bg-stars.svg),
+    linear-gradient(to bottom, hsl(235, 16%, 14%), #261c2d, #261a2d);
+  background-repeat: no-repeat;
+  background-position: 100% 100%, top left, top;
+  background-size: 238%, auto, auto;
+}
+
+footer {
+}
+
+.tracking {
+  letter-spacing: 6.14px;
+}
+
 @tailwind components;
 @tailwind utilities;
