@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="/styles/main.css" />
     <title>Frontend Mentor | Launch countdown timer</title>
@@ -18,15 +24,44 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body class="h-screen">
-    <main>
-      <h1 class="font-bold text-center text-lg text-white pt-36 pb-8 uppercase px-6 tracking">
+    <main class="container mx-auto">
+      <h1
+        class="font-bold text-center text-lg lg:text-2xl text-white pt-36 lg:pt-32 pb-8 uppercase px-6 tracking"
+      >
         We're launching soon
       </h1>
 
-      <section class="countdown"></section>
+      <section class="countdown flex justify-center items-center space-x-4 md:space-x-8">
+        <div class="days card">
+          <div class="demarc"></div>
+          <div class="card-top">41</div>
+          <div class="card-bottom" data-value="41"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="hours card">
+          <div class="demarc"></div>
+          <div class="card-top">41</div>
+          <div class="card-bottom" data-value="41"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="minutes card">
+          <div class="demarc"></div>
+          <div class="card-top">41</div>
+          <div class="card-bottom" data-value="41"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="seconds card">
+          <div class="demarc"></div>
+          <div class="card-top">41</div>
+          <div class="card-bottom" data-value="41"></div>
+          <div class="card-back" data-value="41">
+            <div class="card-bottom" data-value="41"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="">
+    <footer class="fixed bottom-0 left-0 right-0 pb-4 lg:pb-8">
       <!-- <div>
         <img src="./images/pattern-hills.svg" alt="#" />
       </div> -->
@@ -44,6 +79,18 @@
           >keside</a
         >.
       </div> -->
+
+      <div class="socials flex items-center justify-center space-x-2">
+        <div class="icon">
+          <i class="fab fa-facebook-square"></i>
+        </div>
+        <div class="pinterest icon">
+          <i class="fab fa-pinterest"></i>
+        </div>
+        <div class="iG icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
