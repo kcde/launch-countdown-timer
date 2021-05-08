@@ -1,4 +1,9 @@
-const futureDate = new Date(2021, 4, 9, 6, 33);
+let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
+// const futureDate = new Date(2021, 4, 9, 6, 33);
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 8, 0, 41);
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
@@ -26,8 +31,6 @@ function getRemainingTime() {
   const remainingHours = Math.floor((timeRemaining % oneDay) / oneHour);
   const remainingMinutes = Math.floor((timeRemaining % oneHour) / oneMin);
   const remainingSeconds = Math.floor((timeRemaining % oneMin) / 1000);
-
-  const values = [remainingDays, remainingHours, remainingMinutes, remainingSeconds];
 
   window.addEventListener('DOMContentLoaded', () => {
     updateMinutes(remainingMinutes, true);
