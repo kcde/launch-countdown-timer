@@ -38,7 +38,7 @@ body {
   content: '';
   position: absolute;
 
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #191a23;
   top: 0;
   bottom: 0;
@@ -175,6 +175,16 @@ body {
 
   .card-name {
     font-size: calc(7px + 0.487vw);
+  }
+
+  .card-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .card-bottom {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 
